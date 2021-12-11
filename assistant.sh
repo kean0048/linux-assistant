@@ -2,7 +2,7 @@
 sudo apt install -y xterm
 sudo apt install -y zenity
 resize -s 45 90
-SELECT=$(whiptail --title "Ubuntu助手" --checklist \
+SELECT=$(whiptail --title "Linux助手" --checklist \
 "选择要安装的软件或电脑配置（可多选，空格键选择，Tab键跳转)" 45 90 37 \
 "CUDA 9.1" "Ubuntu18 仓库提供" OFF \
 "CUDA 10.1, cudnn 7.6.5" "仅限于Ubuntu18" OFF \
@@ -202,7 +202,7 @@ Vim() {
 #	sudo apt install -y vim
 	#sudo apt install -y vim-gtk3 vim-nox
 
-	sudo apt install libncurses5-dev libgtk2.0-dev libatk1.0-dev libcairo2-dev python-dev python3-dev git
+	sudo apt install libncurses5-dev libgtk2.0-dev libatk1.0-dev libcairo2-dev python-dev python3-dev git ctags cscope
 	sudo apt remove -y vim vim-runtime gvim
 	cd 
 	git clone https://gitee.com/borninfreedom/vim.git && sudo mv vim /usr
